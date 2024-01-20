@@ -29,10 +29,11 @@ body {
     top: 0;
     width: 100%;
     background-color: var(--cor-primaria);
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -75,6 +76,48 @@ body {
 
 }
 
+
+/* Estilos gerais para os projetos */
+.apresentacao__conteudo_projeto {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 8px; 
+    background-color: rgba(0, 255, 255, 0.1); 
+}
+
+.apresentacao__conteudo_projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+
+.tecnologias {
+    display: flex; 
+    align-items: center; 
+    gap: 5px;
+}
+
+.icon {
+    width: 30px;
+}
+
+
+
+.apresentacao__conteudo_projeto .apresentacao__conteudo__texto {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+
+
+
 .apresentacao__card {
     display: flex;
     flex-direction: column; 
@@ -107,7 +150,7 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 
 }
 
@@ -118,7 +161,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-family: var(--fonte-secundaria);
     
 }
@@ -172,9 +215,31 @@ body {
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
-    font-weight:400px;
+    font-weight:400;
 
 }
+
+.projeto__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21px 0;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.projeto_link:hover {
+    background: var(--cor-hover);
+}
+
 
 @media (max-width: 1200px){
     .cabecalho{
@@ -210,6 +275,16 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+
+    .tecnologias {
+        flex-wrap: wrap;
+    }
+
+    .icon {
+        margin-bottom: 5px; 
+    }
+
+
 
 }
 
